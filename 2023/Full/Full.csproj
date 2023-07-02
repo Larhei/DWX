@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RuntimeIdentifier>win</RuntimeIdentifier>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net48</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <NeutralLanguage>de</NeutralLanguage>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <UserSecretsId>80e8ca33-2861-475d-8d94-983743fcc621</UserSecretsId>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Remove="SampleData\MainWindowViewModelSampleData.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DesignDataWithDesignTimeCreatableTypes Include="SampleData\MainWindowViewModelSampleData.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Xaml.Behaviors.Wpf" />
+    <PackageReference Include="WpfBindingErrors" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="DesignTimeData.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

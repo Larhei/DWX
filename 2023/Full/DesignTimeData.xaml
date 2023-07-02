@@ -1,0 +1,31 @@
+﻿<UserControl x:Class="Full.DesignTimeData"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Full"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <d:Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </d:Grid.ColumnDefinitions>
+       
+        <d:ListView d:ItemsSource="{d:SampleData ItemCount=5}">
+            
+        </d:ListView>
+        <d:TreeView Grid.Column="1">
+            <d:TreeViewItem Header="Node1" IsExpanded="False">
+                <d:TreeViewItem Header="Node2">
+
+                </d:TreeViewItem>
+            </d:TreeViewItem>
+            <d:TreeViewItem Header="Node2" IsExpanded="True">
+                <d:TreeViewItem Header="Node3">
+
+                </d:TreeViewItem>
+            </d:TreeViewItem>
+        </d:TreeView>
+    </Grid>
+</UserControl>

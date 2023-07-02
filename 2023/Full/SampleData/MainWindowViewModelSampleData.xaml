@@ -1,0 +1,15 @@
+﻿<ViewModel:MainWindowViewModel
+    xmlns:ViewModel="clr-namespace:Full.ViewModel;assembly=Full"
+    xmlns:Model="clr-namespace:Full.Model;assembly=Full"
+    CurrentUserName="SampleUser">
+    <ViewModel:MainWindowViewModel.AllCredentials>
+        <Model:CredentialItem UserId="0" Password="XXXX"/>
+        <Model:CredentialItem UserId="1" Password="XXXX"/>
+        <Model:CredentialItem UserId="2" Password="XXXX"/>
+        <Model:CredentialItem UserId="3" Password="XXXX"/>
+        <Model:CredentialItem UserId="4" Password="XXXX"/>
+        <Model:CredentialItem UserId="5" Password="XXXX"/>
+        <Model:CredentialItem UserId="6" Password="XXXX"/>
+    </ViewModel:MainWindowViewModel.AllCredentials>
+</ViewModel:MainWindowViewModel>
+
